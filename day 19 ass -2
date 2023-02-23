@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n, oddsum = 0, evensum = 0;
+
+    printf("Enter a series of numbers (0 to end): ");
+    scanf("%d", &n);
+
+    while (n != 0) {
+        if (n % 2 == 0) {
+            evensum += n;
+        } else {
+            oddsum += n;
+        }
+        scanf("%d", &n);
+    }
+
+    printf("The difference between the sum of the odd numbers and the sum of the even numbers is: %d\n", oddsum - evensum);
+
+    return 0;
+}
